@@ -13,7 +13,7 @@ toc: false
 # Lausanne au fil du temps
 Les Romains ont construit un camp militaire aux abords du lac Léman, qu’ils ont nommé Lousanna, vers l’an 14 av. J.-C. Grâce à sa topographie avantageuse – entourée de rivières et perchée sur une colline – Lausanne était l’endroit idéal pour y établir une forteresse. Ce cadre naturel a permis à la ville de durer dans le temps et de croître considérablement. En plus, Lausanne se trouvait sur le tracé de la via Francigena, un important chemin de pèlerinage menant à Rome : un emplacement stratégique, donc !
 
-Après la chute de l’Empire romain, la colline de la Cité offrait un bon refuge pour les habitants en cas d’attaque.
+Après la chute de l’Empire romain, la colline de la Cité offrait un bon refuge pour les habitants en cas d’attaque, le centre de lausanne est donc relocalisé. 
 
 De 888 à 1032, la ville appartenait au Royaume de Haute-Bourgogne. Puis, entre 1032 et 1536, la ville devient une cité épiscopale. La célèbre cathédrale de Lausanne y est érigée en 1275 : c’est la toute première cathédrale gothique de Suisse ! Elle attire de nombreux pèlerins, ce qui contribue à l’essor de la ville.
 
@@ -110,7 +110,7 @@ L.marker([46.5232309, 6.6303405])
 
 # Analyses
 
-Journaliers payés en nature
+Journaliers payés en nature : ils sont donc nourris et logés, ceci explique en partie leur faible salaire. 
 
 # Sources
 [Wikipedia](https://fr.wikipedia.org/wiki/Lausanne)
