@@ -8,15 +8,16 @@ toc: false
 
 ## Traitement des données salariales
 
-trouvées sur HSSO.ch, montrer exemple, avec catégories
-Nous avons donc réussi à établir 23 catégories de métiers, réparties entre les secteurs primaires, secondaires et tertiaires. Les données contennaient aussi un indice salarial à travers le XIXe siècle, ce qui nous a permis de deriver la valeur des salaires approximatifs que nos catégories recevaient au courant du siècle. 
+TODO : trouvées sur HSSO.ch, montrer exemple, avec catégories
 
-Grâce aux indicateurs vaudois, nous avons pu avoir les habitants, leur métiers et leur addresse. 
-Nous avons ensuite classé les métiers des indicateurs dans leur catégories corressponsantes, pour pouvoir leur attribuer un salaire. Ceci a été fait grâce à lama3.3-instruct. 
-Pour géolocaliser les personnes nous nous sommes servis de Nominatim.   
+Nous avons identifié 23 catégories de métiers, réparties entre les secteurs primaire, secondaire et tertiaire. Les données comprenaient également un indice salarial couvrant le XIXe siècle, ce qui nous a permis d’estimer les salaires approximatifs associés à chacune de nos catégories au fil du temps.
+
+Grâce aux indicateurs vaudois, nous avons obtenu des informations précieuses : noms des habitants, métiers exercés et adresses. Nous avons ensuite classé les métiers dans les catégories correspondantes afin de pouvoir leur attribuer un salaire estimé. Cette étape a été réalisée à l’aide de lama3.3-instruct.
+
+Pour géolocaliser les personnes, nous avons utilisé l’outil Nominatim.
 
 ## Catégorisation des métiers
 
-box interactive avec métier et quel catégorie c'est, à voir si c'est possible
+TODO : box interactive avec métier et quelle catégorie c'est, à voir si c'est possible
 
 ## Géolocalisation des habitants et habitantes sur la carte
