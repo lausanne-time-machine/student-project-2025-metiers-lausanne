@@ -26,25 +26,25 @@ En 1789, c'est la Révolution en France ! Elle inspire les Vaudois, qui rêvent 
 En 1847, la première usine à gaz est construite dans le quartier d'Ouchy. C'est le début de la révolution industrielle à Lausanne ! C'est donc l'arivée des métiers  liés à l’énergie, à l’hydraulique, au gaz et à l’industrie. 
 
 
-![](/student-project-2025-metiers-lausanne/data/lausanne_de_haut.png)
+![](./student-project-2025-metiers-lausanne/src/data/lausanne_de_haut.png)
 *1932, une vue de Lausanne avec l'église Saint-Laurent et la cathédrale depuis le sommet de la tour Bel-Air. Elle fera la une des magazines hebdomadaires durant plusieurs années. Fondation Pierre Izard*
 
 
 ## Lausanne et l'évolution des métiers au 20e siècle
 Lausanne a traversé une transformation majeure de son tissu économique et social au cours du 20e siècle. Au début de cette période, la ville était encore ancrée dans une économie artisanale et industrielle, avec des secteurs comme le textile, le cuir, la construction, la métallurgie et l'alimentation qui jouaient un rôle clé. Les artisans et les ouvriers représentaient une part importante de la population active, surtout en ville, où ils constituaient environ la moitié des chefs de famille.
 
-![](/student-project-2025-metiers-lausanne/data/carrosiers.png)
+![](./student-project-2025-metiers-lausanne/src/data/carrosiers.png)
 *1981, l'Ecole des Métiers de Lausanne forme les carrossiers de demain. Fondation Pierre Izard*
 
 L'industrialisation, qui avait commencé dès le 19e siècle, a pris de l'ampleur avec l'arrivée du chemin de fer à Lausanne en 1856, rendant le transport des marchandises et des personnes beaucoup plus facile. Cette nouvelle infrastructure a permis le développement de zones industrielles le long des voies ferrées, notamment dans l'ouest de la ville. En parallèle, le 20e siècle a vu une transition progressive vers une économie de services à Lausanne. Les secteurs des services, du commerce, de l'administration et des professions libérales ont gagné en importance, modifiant ainsi le paysage professionnel de la ville. Cette évolution a été accompagnée d'une urbanisation croissante et d'une diversification des métiers, reflétant les changements socio-économiques au sein de la société lausannoise.
 
-![](/student-project-2025-metiers-lausanne/data/vendanges.png)
+![](./student-project-2025-metiers-lausanne/src/data/vendanges.png)
 *Pause de midi lors des vendanges. Les hommes d'un côté les femmes et les enfants de l'autre.*
 
 
 En lien avec cette évolution des métiers, les modes de rémunération ont également évolué. Les salaires étaient versés de différentes manières : à l'heure, au mois, à la pièce ou à la tâche. Ils pouvaient être complétés par des indemnités pour le travail de nuit, les heures supplémentaires, ou encore par des avantages en nature (logement, nourriture, vêtements), des primes ou des pourboires. Ces différentes formes de rémunération illustrent la diversité des conditions de travail selon les métiers et les secteurs. L'analyse historique révèle aussi de fortes disparités salariales : entre les hommes et les femmes, entre les villes et les campagnes, et entre les différentes branches professionnelles.
 
-![](/student-project-2025-metiers-lausanne/data/trace_route.png)
+![](./student-project-2025-metiers-lausanne/src/data/trace_route.png)
 *1928, Ouchy. Sous le regard débonnaire d'un gendarme, l'un des premiers engins à tracer la ligne des routes. Fondation Pierre Izard*
 
 Ce projet vise à retracer cette dynamique en proposant des graphiques et une carte interactive illustrant la répartition des métiers à Lausanne au cours du 20e siècle. L’objectif est de mettre en lumière les transformations économiques, sociales et spatiales de la ville à travers ses professions, ses secteurs d’activité et les conditions de vie des travailleurs.
