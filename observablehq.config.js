@@ -7,14 +7,11 @@ export default {
   // all pages will be listed in alphabetical order. Listing pages explicitly
   // lets you organize them into sections and have unlisted pages.
   pages: [
-    {
-      name: "Examples",
-      pages: [
-        {name: "Méthodologie", path: "/methodo"},
-        {name: "A propos", path: "/a_propos"},
-        {name: "Cadastre Rénové", path: "/cadastre-renove"},
-      ]
-    }
+    
+      {name: "Méthodologie", path: "/methodo"},
+      {name: "A propos", path: "/a_propos"},
+      {name: "Cadastre Rénové", path: "/cadastre-renove"},
+    
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
