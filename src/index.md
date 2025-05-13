@@ -118,6 +118,9 @@ Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époqu
   }</div>
 </div>
 
+![](./data/avg.png)
+![](./data/sectors.png)
+
 
 
 
