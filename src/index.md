@@ -27,6 +27,7 @@ En 1847, la première usine à gaz est construite dans le quartier d'Ouchy. C'es
 
 
 ![](./data/lausanne_de_haut.png)
+
 *1932, une vue de Lausanne avec l'église Saint-Laurent et la cathédrale depuis le sommet de la tour Bel-Air. Elle fera la une des magazines hebdomadaires durant plusieurs années. Fondation Pierre Izard*
 
 
@@ -34,17 +35,20 @@ En 1847, la première usine à gaz est construite dans le quartier d'Ouchy. C'es
 Lausanne a traversé une transformation majeure de son tissu économique et social au cours du 20e siècle. Au début de cette période, la ville était encore ancrée dans une économie artisanale et industrielle, avec des secteurs comme le textile, le cuir, la construction, la métallurgie et l'alimentation qui jouaient un rôle clé. Les artisans et les ouvriers représentaient une part importante de la population active, surtout en ville, où ils constituaient environ la moitié des chefs de famille.
 
 ![](./data/carrossiers.png)
+
 *1981, l'Ecole des Métiers de Lausanne forme les carrossiers de demain. Fondation Pierre Izard*
 
 L'industrialisation, qui avait commencé dès le 19e siècle, a pris de l'ampleur avec l'arrivée du chemin de fer à Lausanne en 1856, rendant le transport des marchandises et des personnes beaucoup plus facile. Cette nouvelle infrastructure a permis le développement de zones industrielles le long des voies ferrées, notamment dans l'ouest de la ville. En parallèle, le 20e siècle a vu une transition progressive vers une économie de services à Lausanne. Les secteurs des services, du commerce, de l'administration et des professions libérales ont gagné en importance, modifiant ainsi le paysage professionnel de la ville. Cette évolution a été accompagnée d'une urbanisation croissante et d'une diversification des métiers, reflétant les changements socio-économiques au sein de la société lausannoise.
 
 ![](./data/vendanges.png)
+
 *Pause de midi lors des vendanges. Les hommes d'un côté les femmes et les enfants de l'autre.*
 
 
 En lien avec cette évolution des métiers, les modes de rémunération ont également évolué. Les salaires étaient versés de différentes manières : à l'heure, au mois, à la pièce ou à la tâche. Ils pouvaient être complétés par des indemnités pour le travail de nuit, les heures supplémentaires, ou encore par des avantages en nature (logement, nourriture, vêtements), des primes ou des pourboires. Ces différentes formes de rémunération illustrent la diversité des conditions de travail selon les métiers et les secteurs. L'analyse historique révèle aussi de fortes disparités salariales : entre les hommes et les femmes, entre les villes et les campagnes, et entre les différentes branches professionnelles.
 
 ![](./data/trace_route.png)
+
 *1928, Ouchy. Sous le regard débonnaire d'un gendarme, l'un des premiers engins à tracer la ligne des routes. Fondation Pierre Izard*
 
 Ce projet vise à retracer cette dynamique en proposant des graphiques et une carte interactive illustrant la répartition des métiers à Lausanne au cours du 20e siècle. L’objectif est de mettre en lumière les transformations économiques, sociales et spatiales de la ville à travers ses professions, ses secteurs d’activité et les conditions de vie des travailleurs.
@@ -57,7 +61,7 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
 Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époque.
 
 <div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
-  <div class="card">${
+  <div class="card" id = "plot1">${
     resize((width) => Plot.plot({
       title: "Your awesomeness over time 🚀",
       subtitle: "Up and to the right!",
@@ -69,7 +73,7 @@ Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époqu
       ]
     }))
   }</div>
-  <div class="card">${
+  <div class="card" id = "plot2">${
     resize((width) => Plot.plot({
       title: "How big are penguins, anyway? 🐧",
       width,
@@ -85,6 +89,155 @@ Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époqu
   }</div>
 </div>
 
+  ```js
+
+  // Directly defining the job data for 1901 and 1951
+    const data1901 = [
+        { job: "domestique", count: 696 },
+        { job: "ménagère", count: 526 },
+        { job: "couturière", count: 390 },
+        { job: "rentière", count: 296 },
+        { job: "manœuvre", count: 268 },
+        { job: "employé", count: 261 },
+        { job: "cuisinière", count: 254 },
+        { job: "menuisier", count: 251 },
+        { job: "maçon", count: 226 },
+        { job: "agriculteur", count: 224 },
+        { job: "serrurier", count: 215 },
+        { job: "journalier", count: 167 },
+        { job: "jardinier", count: 167 },
+        { job: "étudiant", count: 156 },
+        { job: "tailleur", count: 153 },
+        { job: "cordonnier", count: 152 },
+        { job: "négociant", count: 141 },
+        { job: "boulanger", count: 125 },
+        { job: "typographe", count: 122 },
+        { job: "charpentier", count: 122 },
+        { job: "femme de chambre", count: 117 },
+        { job: "cafetier", count: 108 },
+        { job: "demoiselle de magasin", count: 106 },
+        { job: "institutrice", count: 104 },
+        { job: "charretier", count: 100 },
+        { job: "rentier", count: 92 },
+        { job: "comptable", count: 92 },
+        { job: "mécanicien", count: 85 },
+        { job: "repasseuse", count: 81 },
+        { job: "ferblantier", count: 79 },
+        { job: "blanchisseuse", count: 71 },
+        { job: "ébéniste", count: 69 },
+        { job: "journalière", count: 66 },
+        { job: "peintre", count: 63 },
+        { job: "boucher", count: 60 },
+        { job: "cocher", count: 60 },
+        { job: "concierge", count: 56 },
+        { job: "coiffeur", count: 54 },
+        { job: "employé J.-S.", count: 53 },
+        { job: "architecte", count: 53 },
+        { job: "ingénieur", count: 53 },
+        { job: "employé postal", count: 52 },
+        { job: "journalière", count: 51 },
+        { job: "lingère", count: 51 },
+        { job: "tapissier", count: 49 },
+        { job: "commis", count: 49 },
+        { job: "relieur", count: 47 },
+        { job: "modiste", count: 47 },
+        { job: "maréchal", count: 44 },
+        { job: "manœuvre", count: 43 }
+      ];
+  
+      const data1951 = [
+        { job: "Vve", count: 2538 },
+        { job: "man.", count: 680 },
+        { job: "manœuvre", count: 556 },
+        { job: "veuve", count: 513 },
+        { job: "représentant", count: 508 },
+        { job: "vendeuse", count: 504 },
+        { job: "étud", count: 452 },
+        { job: "maçon", count: 433 },
+        { job: "peintre", count: 426 },
+        { job: "Veuve", count: 408 },
+        { job: "chauffeur", count: 405 },
+        { job: "menuisier", count: 385 },
+        { job: "comptable", count: 343 },
+        { job: "couturière", count: 313 },
+        { job: "jardinier", count: 312 },
+        { job: "mécanicien", count: 307 },
+        { job: "emp. bur", count: 302 },
+        { job: "représent.", count: 295 },
+        { job: "boulanger", count: 277 },
+        { job: "coiffeur", count: 276 },
+        { job: "secrétaire", count: 269 },
+        { job: "man", count: 268 },
+        { job: "typo", count: 266 },
+        { job: "serrurier", count: 266 },
+        { job: "commerçant", count: 263 },
+        { job: "mécan.", count: 255 },
+        { job: "ébéniste", count: 253 },
+        { job: "empi, de bureau", count: 220 },
+        { job: "magasinier", count: 215 },
+        { job: "coutur.", count: 213 },
+        { job: "sommelière", count: 211 },
+        { job: "représ", count: 194 },
+        { job: "médecin", count: 189 },
+        { job: "vend", count: 185 },
+        { job: "infirmière", count: 177 },
+        { job: "électricien", count: 177 },
+        { job: "boucher", count: 176 },
+        { job: "concierge", count: 171 },
+        { job: "empi, bureau", count: 163 },
+        { job: "monteur", count: 162 },
+        { job: "professeur", count: 162 },
+        { job: "cordonnier", count: 159 },
+        { job: "empi, postal", count: 156 },
+        { job: "tapissier", count: 153 },
+        { job: "épicerie", count: 151 },
+        { job: "cuisinier", count: 149 },
+        { job: "empi, bur.", count: 146 },
+        { job: "lingère", count: 145 },
+        { job: "emp. comm", count: 144 },
+        { job: "ingénieur", count: 143 }
+      ];
+  
+    // Function to get the data based on selected year
+    function getDataForYear(year) {
+      return year === 1901 ? data1901 : data1951;
+    }
+  
+    async function updatePlot() {
+      const year = 1901
+      const topN = 10
+      const data = getDataForYear(year); // Get data based on selected year
+  
+      const topData = data.slice(0, topN);
+      const container = document.getElementById("plot-container");
+  
+      const plot = Plot.plot({
+        title: `Top ${topN} Jobs in ${year}`,
+        width: container.clientWidth,
+        height: 400,
+        y: { label: "Job Type", domain: topData.map(d => d.job), padding: 0.1},
+        x: { label: "Count" },
+        marks: [
+          Plot.barX(topData, { x: "count", y: "job", tip: true })
+        ]
+      });
+  
+      container.innerHTML = "";
+      container.appendChild(plot);
+    }
+  
+    updatePlot(); // initial render
+```
+
+<select id="year-select">
+  <option value="1901">1901</option>
+  <option value="1951">1951</option>
+</select>
+
+<label>Top 10 jobs</label>
+
+<div class="card" id="plot-container">
+</div>
 ---
 
 
