@@ -89,10 +89,8 @@ Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époqu
   }</div>
 </div>
 
-  ```js
-
-  // Directly defining the job data for 1901 and 1951
-    const data1901 = [
+```js
+  const data1901 = [
         { job: "domestique", count: 696 },
         { job: "ménagère", count: 526 },
         { job: "couturière", count: 390 },
@@ -102,50 +100,9 @@ Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époqu
         { job: "cuisinière", count: 254 },
         { job: "menuisier", count: 251 },
         { job: "maçon", count: 226 },
-        { job: "agriculteur", count: 224 },
-        { job: "serrurier", count: 215 },
-        { job: "journalier", count: 167 },
-        { job: "jardinier", count: 167 },
-        { job: "étudiant", count: 156 },
-        { job: "tailleur", count: 153 },
-        { job: "cordonnier", count: 152 },
-        { job: "négociant", count: 141 },
-        { job: "boulanger", count: 125 },
-        { job: "typographe", count: 122 },
-        { job: "charpentier", count: 122 },
-        { job: "femme de chambre", count: 117 },
-        { job: "cafetier", count: 108 },
-        { job: "demoiselle de magasin", count: 106 },
-        { job: "institutrice", count: 104 },
-        { job: "charretier", count: 100 },
-        { job: "rentier", count: 92 },
-        { job: "comptable", count: 92 },
-        { job: "mécanicien", count: 85 },
-        { job: "repasseuse", count: 81 },
-        { job: "ferblantier", count: 79 },
-        { job: "blanchisseuse", count: 71 },
-        { job: "ébéniste", count: 69 },
-        { job: "journalière", count: 66 },
-        { job: "peintre", count: 63 },
-        { job: "boucher", count: 60 },
-        { job: "cocher", count: 60 },
-        { job: "concierge", count: 56 },
-        { job: "coiffeur", count: 54 },
-        { job: "employé J.-S.", count: 53 },
-        { job: "architecte", count: 53 },
-        { job: "ingénieur", count: 53 },
-        { job: "employé postal", count: 52 },
-        { job: "journalière", count: 51 },
-        { job: "lingère", count: 51 },
-        { job: "tapissier", count: 49 },
-        { job: "commis", count: 49 },
-        { job: "relieur", count: 47 },
-        { job: "modiste", count: 47 },
-        { job: "maréchal", count: 44 },
-        { job: "manœuvre", count: 43 }
-      ];
-  
-      const data1951 = [
+        { job: "agriculteur", count: 224 }
+  ]
+  const data1951 = [
         { job: "Vve", count: 2538 },
         { job: "man.", count: 680 },
         { job: "manœuvre", count: 556 },
@@ -155,90 +112,41 @@ Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époqu
         { job: "étud", count: 452 },
         { job: "maçon", count: 433 },
         { job: "peintre", count: 426 },
-        { job: "Veuve", count: 408 },
-        { job: "chauffeur", count: 405 },
-        { job: "menuisier", count: 385 },
-        { job: "comptable", count: 343 },
-        { job: "couturière", count: 313 },
-        { job: "jardinier", count: 312 },
-        { job: "mécanicien", count: 307 },
-        { job: "emp. bur", count: 302 },
-        { job: "représent.", count: 295 },
-        { job: "boulanger", count: 277 },
-        { job: "coiffeur", count: 276 },
-        { job: "secrétaire", count: 269 },
-        { job: "man", count: 268 },
-        { job: "typo", count: 266 },
-        { job: "serrurier", count: 266 },
-        { job: "commerçant", count: 263 },
-        { job: "mécan.", count: 255 },
-        { job: "ébéniste", count: 253 },
-        { job: "empi, de bureau", count: 220 },
-        { job: "magasinier", count: 215 },
-        { job: "coutur.", count: 213 },
-        { job: "sommelière", count: 211 },
-        { job: "représ", count: 194 },
-        { job: "médecin", count: 189 },
-        { job: "vend", count: 185 },
-        { job: "infirmière", count: 177 },
-        { job: "électricien", count: 177 },
-        { job: "boucher", count: 176 },
-        { job: "concierge", count: 171 },
-        { job: "empi, bureau", count: 163 },
-        { job: "monteur", count: 162 },
-        { job: "professeur", count: 162 },
-        { job: "cordonnier", count: 159 },
-        { job: "empi, postal", count: 156 },
-        { job: "tapissier", count: 153 },
-        { job: "épicerie", count: 151 },
-        { job: "cuisinier", count: 149 },
-        { job: "empi, bur.", count: 146 },
-        { job: "lingère", count: 145 },
-        { job: "emp. comm", count: 144 },
-        { job: "ingénieur", count: 143 }
-      ];
-  
-    // Function to get the data based on selected year
-    function getDataForYear(year) {
-      return year === 1901 ? data1901 : data1951;
-    }
-  
-    async function updatePlot() {
-      const year = 1901
-      const topN = 10
-      const data = getDataForYear(year); // Get data based on selected year
-  
-      const topData = data.slice(0, topN);
-      const container = document.getElementById("plot-container");
-  
-      const plot = Plot.plot({
-        title: `Top ${topN} Jobs in ${year}`,
-        width: container.clientWidth,
-        height: 400,
-        y: { label: "Job Type", domain: topData.map(d => d.job), padding: 0.1},
-        x: { label: "Count" },
-        marks: [
-          Plot.barX(topData, { x: "count", y: "job", tip: true })
-        ]
-      });
-  
-      container.innerHTML = "";
-      container.appendChild(plot);
-    }
-  
-    updatePlot(); // initial render
+        { job: "Veuve", count: 408 }
+  ]
 ```
 
-<select id="year-select">
-  <option value="1901">1901</option>
-  <option value="1951">1951</option>
-</select>
+<div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
+  <div class="card" id="plot-1901">${
+    resize((width) =>
+      Plot.plot({
+        title: "Top 10 des métiers en 1901",
+        width,
+        height: 480,
+        marginLeft:100,
+        x: { label: "Nombre" },
+        y: { label: "Métier", domain: data1901.slice(0, 10).map(d => d.job), padding: 0.1 },
+        marks: [Plot.barX(data1901.slice(0, 10), { x: "count", y: "job", tip: true })]
+      })
+    )
+  }</div>
 
-<label>Top 10 jobs</label>
-
-<div class="card" id="plot-container">
+  <div class="card" id="plot-1951">${
+    resize((width) =>
+      Plot.plot({
+        title: "Top 10 des métiers en 1951",
+        width,
+        height: 480,
+        marginLeft:100,
+        x: { label: "Nombre" },
+        y: { label: "Métier", domain: data1951.slice(0, 10).map(d => d.job), padding: 0.1 },
+        marks: [Plot.barX(data1951.slice(0, 10), { x: "count", y: "job", tip: true })]
+      })
+    )
+  }</div>
 </div>
----
+
+
 
 
 # Carte interactive
