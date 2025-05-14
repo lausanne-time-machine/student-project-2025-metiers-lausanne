@@ -67,7 +67,7 @@ Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époqu
         { job: "ménagère", count: 526 },
         { job: "couturière", count: 390 },
         { job: "rentière", count: 296 },
-        { job: "manœuvre", count: 268 },
+        { job: "manœuvrier", count: 268 },
         { job: "employé", count: 261 },
         { job: "cuisinière", count: 254 },
         { job: "menuisier", count: 251 },
@@ -75,16 +75,15 @@ Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époqu
         { job: "agriculteur", count: 224 }
   ]
   const data1951 = [
-        { job: "Vve", count: 2538 },
-        { job: "man.", count: 680 },
-        { job: "manœuvre", count: 556 },
-        { job: "veuve", count: 513 },
+        { job: "manœuvrier", count: 556 },
         { job: "représentant", count: 508 },
         { job: "vendeuse", count: 504 },
-        { job: "étud", count: 452 },
+        { job: "étudiant", count: 452 },
         { job: "maçon", count: 433 },
         { job: "peintre", count: 426 },
-        { job: "Veuve", count: 408 }
+        { job: "chauffeur", count: 405 },
+        { job: "menuisier", count: 385 },
+        { job: "comptable", count: 343 }
   ]
 ```
 
@@ -95,11 +94,14 @@ Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époqu
         title: "Top 10 des métiers en 1901",
         width,
         height: 480,
-        marginLeft:100,
-        x: { label: "Nombre" },
-        y: { label: "Métier", domain: data1901.slice(0, 10).map(d => d.job), padding: 0.1 },
-        marks: [Plot.barX(data1901.slice(0, 10), { x: "count", y: "job", tip: true })]
-      })
+        marginLeft: 100,
+        x: { label: "Nombre", labelOffset: 30  },
+        y: { label: "Métier", domain: data1901.map(d => d.job), padding: 0.1 },
+        marks: [Plot.barX(data1901, { x: "count", y: "job", tip: true })],
+        style: {
+          fontSize: "12px" 
+        }
+})
     )
   }</div>
 
@@ -110,13 +112,18 @@ Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époqu
         width,
         height: 480,
         marginLeft:100,
-        x: { label: "Nombre" },
-        y: { label: "Métier", domain: data1951.slice(0, 10).map(d => d.job), padding: 0.1 },
-        marks: [Plot.barX(data1951.slice(0, 10), { x: "count", y: "job", tip: true })]
+        x: { label: "Nombre", labelOffset: 30 },
+        y: { label: "Métier", domain: data1951.map(d => d.job), padding: 0.1 },
+        marks: [Plot.barX(data1951, { x: "count", y: "job", tip: true })],
+        style: {
+          fontSize: "12px" 
+        }
       })
     )
   }</div>
 </div>
+
+--- 
 
 ![](./data/avg.png)
 ![](./data/sectors.png)
