@@ -152,8 +152,7 @@ L.marker([46.5232309, 6.6303405])
 ```
 
 # Analyses
-
-Journaliers payés en nature : ils sont donc nourris et logés, ceci explique en partie leur faible salaire. 
+sign
 
 # Sources
 [Wikipedia](https://fr.wikipedia.org/wiki/Lausanne)
