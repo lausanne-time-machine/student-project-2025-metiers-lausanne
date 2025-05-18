@@ -58,7 +58,6 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
 
 ## Données, plots
 
-Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époque.
 
 
 ```js
@@ -124,8 +123,42 @@ Allez faire un tour dans méthodologie pour découvrir votre salaire de l'époqu
 </div>
 
 --- 
+```js 
 
-![](./data/sectors.png)
+const avg = FileAttachment("data/sector_avg.json").json()
+```
+
+<div class="card" id="plot-sector-trends">${
+  resize((width) =>
+    Plot.plot({
+      title: "Évolution des salaires moyens par secteur",
+      width,
+      height: 480,
+      marginLeft: 60,
+      marginBottom: 50,
+      x: { label: "Annee", type: "linear" },
+      y: { label: "Salaire moyen", grid: true },
+      color: { legend: true, label: "Secteur", scheme: "category10" },
+      marks: [
+        Plot.line(avg, {
+          x: "Annee",
+          y: "salary",
+          stroke: "sector"
+        }),
+        Plot.dot(avg, {
+          x: "Annee",
+          y: "salary",
+          stroke: "sector",
+          tip: true
+        })
+      ],
+      style: {
+        fontSize: "12px"
+      }
+    })
+  )
+}</div>
+
 
 
 
