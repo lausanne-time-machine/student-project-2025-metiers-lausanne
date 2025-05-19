@@ -11,15 +11,13 @@ toc: false
 </div>
 
 # Lausanne au fil du temps
-Les Romains ont construit un camp militaire aux abords du lac Léman, qu’ils ont nommé Lousanna, vers l’an 14 av. J.-C. Grâce à sa topographie avantageuse – entourée de rivières et perchée sur une colline – Lausanne était l’endroit idéal pour y établir une forteresse. Ce cadre naturel a permis à la ville de durer dans le temps et de croître considérablement. En plus, Lausanne se trouvait sur le tracé de la via Francigena, un important chemin de pèlerinage menant à Rome : un emplacement stratégique, donc !
+Lausanne trouve ses origines à l'époque romaine, avec la fondation d'un camp militaire nommé Lousanna vers 14 av. J.-C., installé dans un cadre naturel stratégique, entre collines et rivières, au bord du lac Léman. Sa position sur la via Francigena, route de pèlerinage vers Rome, en fait un lieu de passage important.
 
-Après la chute de l’Empire romain, la colline de la Cité offrait un bon refuge pour les habitants en cas d’attaque, le centre de lausanne est donc relocalisé. 
+Après la chute de l’Empire romain, le centre de la ville se déplace vers la colline de la Cité, jugée plus sûre en cas d’attaque. De 888 à 1032, Lausanne fait partie du Royaume de Haute-Bourgogne, avant de devenir une cité épiscopale jusqu’en 1536. La construction de la cathédrale en 1275, première cathédrale gothique de Suisse, marque cette époque et attire de nombreux pèlerins.
 
-De 888 à 1032, la ville appartenait au Royaume de Haute-Bourgogne. Puis, entre 1032 et 1536, la ville devient une cité épiscopale. La célèbre cathédrale de Lausanne y est érigée en 1275 : c’est la toute première cathédrale gothique de Suisse ! Elle attire de nombreux pèlerins, ce qui contribue à l’essor de la ville.
+Des tensions entre les Lausannois et leur évêque éclatent au début du XVIe siècle. Bien que liés à Berne par un traité, les Bernois s’emparent de la ville en 1536, imposant la Réforme protestante. Ils fondent alors l’Academia Lausannensis, future université, qui jouera un rôle notable à l’époque des Lumières.
 
-En 1525, des tensions apparaissent entre les Lausannois et leur évêque. Les Bernois interviennent pour calmer le jeu, puisque Lausanne et Berne étaient liés par un traité de combourgeoisie. Mais en 1536, les Bernois bafouent ce traité : ils prennent Vevey, le château de Chillon, puis envahissent la principauté épiscopale de Lausanne. C’est le début de la Réforme protestante dans la ville. Les Bernois en profitent pour fonder l’Academia Lausannensis, qui deviendra plus tard l’Université de Lausanne. Cet établissement jouera un rôle central durant le siècle des Lumières à Lausanne.
-
-Malgré la tentative d’insurrection du major Davel en 1723, la ville reste sous domination bernoise.
+Malgré une tentative de libération menée par le major Davel en 1723, Lausanne reste sous domination bernoise jusqu’à la fin de l’Ancien Régime.
 
 En 1789, c'est la Révolution en France ! Elle inspire les Vaudois, qui rêvent à leur tour de se libérer du joug bernois. Berne tente de freiner cet élan en interdisant les pamphlets et journaux pro-révolutionnaires. Mais en 1798, avec l’aide des troupes de Napoléon Bonaparte, les Vaudois chassent enfin les Bernois. Lausanne devient alors la capitale du canton du Léman, et Napoléon fonde la République helvétique.
 
