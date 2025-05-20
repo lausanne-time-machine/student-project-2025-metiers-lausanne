@@ -1,30 +1,32 @@
 ---
-theme: coffee 
+theme: coffee
 title: Méthodologie
 toc: false
 ---
 
+
 # Méthodologie
 
-Sur cette page se trouvent les sources de nos données et notre méthodologie.
+Cette page présente les sources des données utilisées et la méthodologie appliquée.
 
 ## Traitement des données salariales
 
-TODO : trouvées sur HSSO.ch, montrer exemple, avec catégories
+- Les données proviennent du site statistique historique suisse [HSSO.ch](https://hsso.ch/).
+- Elles recensent 23 catégories de métiers, réparties entre les secteurs primaire, secondaire et tertiaire.
+- Un indice salarial couvrant le XIXe siècle permet d’estimer les salaires approximatifs pour chaque catégorie, selon les années.
+- Grâce aux indicateurs vaudois de la Time Machine Unit, nous avons aussi obtenu des informations sur les noms, métiers et adresses des habitants.
 
-Nous avons utilisé les données présentes sur le site statistique historique de la suisse [HSSO.ch](https://hsso.ch/).
-
-Ces données répértorient 23 catégories de métiers, réparties entre les secteurs primaire, secondaire et tertiaire. Les données comprennent également un indice salarial couvrant le XIXe siècle, ce qui nous a permis d’estimer les salaires approximatifs associés à chacune des catégories au fil du temps.
-
-Grâce aux indicateurs vaudois mis à disposition par la Time Machine Unit, nous avons obtenu des informations précieuses : noms des habitants, métiers exercés et adresses. 
+> *À faire : ajouter un exemple ou une capture d’écran des données issues de HSSO.ch? *
 
 ## Catégorisation des métiers
 
-Nous avons ensuite classé les métiers dans les catégories correspondantes afin de pouvoir leur attribuer un salaire estimé. Cette étape a été réalisée à l’aide de [Llama3.3-instruct](https://huggingface.co/meta-llama/Llama-3.2-1B).
+- Les métiers ont été classés dans les catégories correspondantes pour pouvoir leur attribuer un salaire estimé.
+- Cette étape a été réalisée avec [Llama3.3-instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct).
 
-Voici une interface interactive qui permet de choisir un métier et une année et de voir quel était le salaire approximatif.
+**À ce stade, une interface interactive permet de choisir un métier et une année pour voir le salaire approximatif associé.**
 
+> *Remarque : Claude y arrive mais ça fonctionne pas ici*
 
-## Géolocalisation des habitants et habitantes sur la carte
+## Géolocalisation des habitants et habitantes
 
-Pour géolocaliser les personnes, nous avons utilisé l’outil [Nominatim](https://nominatim.org/).
+- Pour géolocaliser les personnes, nous avons utilisé l’outil [Nominatim](https://nominatim.org/).
