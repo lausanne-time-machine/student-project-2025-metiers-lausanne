@@ -1,7 +1,7 @@
 ---
 theme: coffee
 
-toc: false
+toc: true
 ---
 
 <div class="hero">
