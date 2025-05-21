@@ -26,8 +26,6 @@ console.log(L.heatLayer)
 
 const intensityData = await FileAttachment("./data/salaries_data_1885.json").json();
 
-console.log(intensityData)
-
 // Create Map and Layer - Runs Once
 function createMapAndLayer(mapContainer) {
     const map = L.map(mapContainer).setView([46.521363371846256, 6.631561628380812], 20);

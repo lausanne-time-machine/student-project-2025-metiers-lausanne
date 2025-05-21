@@ -11,6 +11,7 @@ export default {
       {name: "Méthodologie", path: "/methodo"},
       {name: "A propos", path: "/a_propos"},
       {name: "Cadastre Rénové", path: "/cadastre-renove"},
+      {name: "Carte", path: "/carte"},
     
   ],
 
