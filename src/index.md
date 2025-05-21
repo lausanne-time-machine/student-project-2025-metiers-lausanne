@@ -1,7 +1,7 @@
 ---
 theme: coffee
 
-toc: false
+toc: true
 ---
 
 <div class="hero">
@@ -10,24 +10,23 @@ toc: false
   
 </div>
 
-
 ## Lausanne et l'évolution des métiers au 20e siècle
 Lausanne a traversé une transformation majeure de son tissu économique et social au cours du 20e siècle. Au début de cette période, la ville était encore ancrée dans une économie artisanale et industrielle, avec des secteurs comme le textile, le cuir, la construction, la métallurgie et l'alimentation qui jouaient un rôle clé. Les artisans et les ouvriers représentaient une part importante de la population active, surtout en ville, où ils constituaient environ la moitié des chefs de famille.
 
-![](./data/carrossiers.png)
+![](./data/images/carrossiers.png)
 
 *1981, l'Ecole des Métiers de Lausanne forme les carrossiers de demain. Fondation Pierre Izard*
 
 L'industrialisation, qui avait commencé dès le 19e siècle, a pris de l'ampleur avec l'arrivée du chemin de fer à Lausanne en 1856, rendant le transport des marchandises et des personnes beaucoup plus facile. Cette nouvelle infrastructure a permis le développement de zones industrielles le long des voies ferrées, notamment dans l'ouest de la ville. En parallèle, le 20e siècle a vu une transition progressive vers une économie de services à Lausanne. Les secteurs des services, du commerce, de l'administration et des professions libérales ont gagné en importance, modifiant ainsi le paysage professionnel de la ville. Cette évolution a été accompagnée d'une urbanisation croissante et d'une diversification des métiers, reflétant les changements socio-économiques au sein de la société lausannoise.
 
-![](./data/vendanges.png)
+![](./data/images/vendanges.png)
 
 *Pause de midi lors des vendanges. Les hommes d'un côté les femmes et les enfants de l'autre.*
 
 
 En lien avec cette évolution des métiers, les modes de rémunération ont également évolué. Les salaires étaient versés de différentes manières : à l'heure, au mois, à la pièce ou à la tâche. Ils pouvaient être complétés par des indemnités pour le travail de nuit, les heures supplémentaires, ou encore par des avantages en nature (logement, nourriture, vêtements), des primes ou des pourboires. Ces différentes formes de rémunération illustrent la diversité des conditions de travail selon les métiers et les secteurs. L'analyse historique révèle aussi de fortes disparités salariales : entre les hommes et les femmes, entre les villes et les campagnes, et entre les différentes branches professionnelles.
 
-![](./data/trace_route.png)
+![](./data/images/trace_route.png)
 
 *1928, Ouchy. Sous le regard débonnaire d'un gendarme, l'un des premiers engins à tracer la ligne des routes. Fondation Pierre Izard*
 
@@ -103,7 +102,7 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
 --- 
 ```js 
 
-const avg = FileAttachment("data/sector_avg.json").json()
+const avg = FileAttachment("data/plot_data/sector_avg.json").json()
 ```
 
 <div class="card" id="plot-sector-trends">${
