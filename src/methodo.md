@@ -15,7 +15,6 @@ Cette page présente les sources des données utilisées et la méthodologie app
 - Elles recensent 23 catégories de métiers, réparties entre les secteurs primaire, secondaire et tertiaire.
 - Un indice salarial couvrant le XIXe siècle permet d’estimer les salaires approximatifs pour chaque catégorie, selon les années.
 - Grâce aux indicateurs vaudois de la Time Machine Unit, nous avons aussi obtenu des informations sur les noms, métiers et adresses des habitants.
-- 
 
 |       |                       |      |                   |                                |     |Secteur ternaire et secondaire | | | | | | |
 | ----- | --------------------- | ---------------------------------- | ----------------- | ------------------------------ |---  |-|-|-|-|-|-|-|
