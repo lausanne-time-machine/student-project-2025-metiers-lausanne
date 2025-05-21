@@ -102,7 +102,7 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
 --- 
 ```js 
 
-const avg = FileAttachment("data/sector_avg.json").json()
+const avg = FileAttachment("data/plot_data/sector_avg.json").json()
 ```
 
 <div class="card" id="plot-sector-trends">${
