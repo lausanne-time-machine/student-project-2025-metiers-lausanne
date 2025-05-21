@@ -3,7 +3,24 @@ theme: coffee
 
 toc: true
 ---
-
+<style>
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+</style>
 <div class="hero">
   <h1>Cartographie des revenus dans la ville de Lausanne</h1>
   <h2>Une étude de la cartographie des métiers à Lausanne durant le XXe siècle, par le groupe Neuchâtel Fun Machine</h2>
@@ -159,7 +176,15 @@ L.marker([46.5232309, 6.6303405])
   .bindPopup("La maison de Soph")
   .openPopup();
 ```
+## Visualisation interactive
 
+<div id="plotDiv" style="width: 100%; height: 600px;"></div>
+
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<script>
+  const salaryPlotData = {/* ... votre structure JSON ici ... */};
+  Plotly.newPlot('plotDiv', salaryPlotData.data, salaryPlotData.layout || {});
+</script>
 # Analyses
 sign
 
