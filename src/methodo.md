@@ -33,9 +33,6 @@ Cette page présente les sources des données utilisées et la méthodologie app
 - Les métiers ont été classés dans les catégories correspondantes pour pouvoir leur attribuer un salaire estimé.
 - Cette étape a été réalisée avec [Llama3.3-instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct).
 
-**À ce stade, une interface interactive permet de choisir un métier et une année pour voir le salaire approximatif associé.**
-
-> *Remarque : Claude y arrive mais ça fonctionne pas ici*
 
 ## Géolocalisation des habitants et habitantes
 
