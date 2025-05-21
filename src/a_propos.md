@@ -6,9 +6,9 @@ toc: false
 
 # A Propos
 
-on est qui enft
+Ce site a été créé dans le cadre du cours de SHS de Master, Histoire urbaine digitale: Lausanne Time Machine. 
 
-- Johanna
-- Mathieu
-- Paul
+- Johanna, Cybersécurité
+- Mathieu, Systèmes de communications
+- Paul, Cybersécurité
 - Sophia Kovalenko, Data Science, [Github](https://github.com/sophiaargh)

@@ -5,28 +5,10 @@ toc: false
 ---
 
 <div class="hero">
-  <h1>Neuchâtel Fun Machine</h1>
-  <h2>Une étude de la cartographie des métiers à Lausanne durant le XXe siècle</h2>
+  <h1>Cartographie des revenus dans la ville de Lausanne</h1>
+  <h2>Une étude de la cartographie des métiers à Lausanne durant le XXe siècle, par le groupe Neuchâtel Fun Machine</h2>
   
 </div>
-
-# Lausanne au fil du temps
-Lausanne trouve ses origines à l'époque romaine, avec la fondation d'un camp militaire nommé Lousanna vers 14 av. J.-C., installé dans un cadre naturel stratégique, entre collines et rivières, au bord du lac Léman. Sa position sur la via Francigena, route de pèlerinage vers Rome, en fait un lieu de passage important.
-
-Après la chute de l’Empire romain, le centre de la ville se déplace vers la colline de la Cité, jugée plus sûre en cas d’attaque. De 888 à 1032, Lausanne fait partie du Royaume de Haute-Bourgogne, avant de devenir une cité épiscopale jusqu’en 1536. La construction de la cathédrale en 1275, première cathédrale gothique de Suisse, marque cette époque et attire de nombreux pèlerins.
-
-Des tensions entre les Lausannois et leur évêque éclatent au début du XVIe siècle. Bien que liés à Berne par un traité, les Bernois s’emparent de la ville en 1536, imposant la Réforme protestante. Ils fondent alors l’Academia Lausannensis, future université, qui jouera un rôle notable à l’époque des Lumières.
-
-Malgré une tentative de libération menée par le major Davel en 1723, Lausanne reste sous domination bernoise jusqu’à la fin de l’Ancien Régime.
-
-En 1789, c'est la Révolution en France ! Elle inspire les Vaudois, qui rêvent à leur tour de se libérer du joug bernois. Berne tente de freiner cet élan en interdisant les pamphlets et journaux pro-révolutionnaires. Mais en 1798, avec l’aide des troupes de Napoléon Bonaparte, les Vaudois chassent enfin les Bernois. Lausanne devient alors la capitale du canton du Léman, et Napoléon fonde la République helvétique.
-
-En 1847, la première usine à gaz est construite dans le quartier d'Ouchy. C'est le début de la révolution industrielle à Lausanne ! C'est donc l'arivée des métiers  liés à l’énergie, à l’hydraulique, au gaz et à l’industrie. 
-
-
-![](./data/lausanne_de_haut.png)
-
-*1932, une vue de Lausanne avec l'église Saint-Laurent et la cathédrale depuis le sommet de la tour Bel-Air. Elle fera la une des magazines hebdomadaires durant plusieurs années. Fondation Pierre Izard*
 
 
 ## Lausanne et l'évolution des métiers au 20e siècle
@@ -53,8 +35,6 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
 
 
 # Quelle est la répartition des métiers et des salaires des habitants et habitantes de Lausanne au XXe siècle?
-
-## Données, plots
 
 
 
