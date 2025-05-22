@@ -3,24 +3,7 @@ theme: coffee
 
 toc: true
 ---
-<style>
-.iframe-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  margin-bottom: 2rem;
-}
-.iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-</style>
+
 <div class="hero">
   <h1>Cartographie des revenus dans la ville de Lausanne</h1>
   <h2>Une étude de la cartographie des métiers à Lausanne durant le XXe siècle, par le groupe Neuchâtel Fun Machine</h2>
@@ -52,7 +35,9 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
 
 # Quelle est la répartition des métiers et des salaires des habitants et habitantes de Lausanne au XXe siècle?
 
+---
 
+# Visualisations des données
 
 ```js
   const data1901 = [
@@ -153,7 +138,19 @@ const avg = FileAttachment("data/plot_data/sector_avg.json").json()
   )
 }</div>
 
+### Par métier
 
+```js 
+import Plotly from "npm:plotly.js-dist";
+```
+
+```js
+const fig = await FileAttachment("data/plot_data/salary_per_job.json").json()
+
+const div = display(document.createElement("div"));
+
+Plotly.newPlot(div, fig.data, fig.layout);
+```
 
 
 
@@ -176,17 +173,10 @@ L.marker([46.5232309, 6.6303405])
   .bindPopup("La maison de Soph")
   .openPopup();
 ```
-## Visualisation interactive
 
-<div id="plotDiv" style="width: 100%; height: 600px;"></div>
 
-<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
-<script>
-  const salaryPlotData = {/* ... votre structure JSON ici ... */};
-  Plotly.newPlot('plotDiv', salaryPlotData.data, salaryPlotData.layout || {});
-</script>
 # Analyses
-sign
+
 
 # Sources
 [Wikipedia](https://fr.wikipedia.org/wiki/Lausanne)
@@ -233,5 +223,7 @@ sign
     font-size: 90px;
   }
 }
+
+
 
 </style>
