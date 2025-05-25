@@ -35,7 +35,9 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
 
 # Quelle est la répartition des métiers et des salaires des habitants et habitantes de Lausanne au XXe siècle?
 
+---
 
+# Visualisations des données
 
 ```js
   const data1901 = [
@@ -136,7 +138,19 @@ const avg = FileAttachment("data/plot_data/sector_avg.json").json()
   )
 }</div>
 
+### Par métier
 
+```js 
+import Plotly from "npm:plotly.js-dist";
+```
+
+```js
+const fig = await FileAttachment("data/plot_data/salary_per_job.json").json()
+
+const div = display(document.createElement("div"));
+
+Plotly.newPlot(div, fig.data, fig.layout);
+```
 
 
 
@@ -269,8 +283,9 @@ function updateMarkers(selectedClass) {
 }
 ```
 
+
 # Analyses
-sign
+
 
 # Sources
 [Wikipedia](https://fr.wikipedia.org/wiki/Lausanne)
@@ -317,5 +332,7 @@ sign
     font-size: 90px;
   }
 }
+
+
 
 </style>

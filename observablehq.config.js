@@ -13,6 +13,7 @@ export default {
       {name: "Cadastre Rénové", path: "/cadastre-renove"},
       {name: "Carte", path: "/carte"},
       {name: "Carte percentiles", path: "/carte_percentile"},
+      {name: "Carte Soph", path: "/carte2"},
     
   ],
 
