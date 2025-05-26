@@ -180,12 +180,14 @@ const zoomLevel = 14;
 let yearData = {
   1885: await FileAttachment('./data/intensity_data_1885.json').json(),
   1901: await FileAttachment('./data/intensity_data_1901.json').json(),
+  1923: await FileAttachment('./data/intensity_data_1901.json').json(),
   1951: await FileAttachment('./data/intensity_data_1951.json').json()
-};              // Loaded intensity data for each year
+};
 
 let yearMapData = {
   1885: await FileAttachment('./data/map_data/map_data_1885.json').json(),
   1901: await FileAttachment('./data/map_data/map_data_1901.json').json(),
+  1923: await FileAttachment('./data/map_data/map_data_1923.json').json(),
   1951: await FileAttachment('./data/map_data/map_data_1951.json').json()
 }
 
