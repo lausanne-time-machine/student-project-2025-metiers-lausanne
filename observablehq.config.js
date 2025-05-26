@@ -7,9 +7,11 @@ export default {
   // all pages will be listed in alphabetical order. Listing pages explicitly
   // lets you organize them into sections and have unlisted pages.
   pages: [
-    
+    {name: "Carte par classe de revenu", path: "/carte1"},
+    {name: "Carte par domaine", path: "/carte2"},
       {name: "Méthodologie", path: "/methodo"},
-      {name: "A propos", path: "/a_propos"}
+      {name: "A propos", path: "/a_propos"},
+
     
   ],
 
