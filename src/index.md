@@ -38,6 +38,18 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
 
 
 ```js
+const data1885 = [
+    {job: "rentière", count: 531},
+    {job: "journalier", count: 313},
+    {job: "rentier", count: 201},
+    {job: "comis", count: 195},
+    {job: "agriculteur", count: 194},
+    {job: "couturière", count: 185},
+    {job: "ménagère", count: 173},
+    {job: "employé", count: 138},
+    {job: "cordonnier", count: 130},
+    {job: "menuisier", count: 128}
+  ]
   const data1901 = [
         { job: "domestique", count: 696 },
         { job: "ménagère", count: 526 },
@@ -49,6 +61,19 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
         { job: "menuisier", count: 251 },
         { job: "maçon", count: 226 },
         { job: "agriculteur", count: 224 }
+  ]
+  
+  const data1923 = [
+    {job: "ménagère", count: 754},
+    {job: "employe", count: 633},
+    {job: "veuve", count: 625},
+    {job: "couturière", count: 468},
+    {job: "négociant", count: 284},
+    {job: "typographe", count: 197},
+    {job: "jardinier", count: 183},
+    {job: "commis", count: 178},
+    {job: "mécanicien", count: 165},
+    {job: "institutrice", count: 159}
   ]
   const data1951 = [
         { job: "manœuvrier", count: 556 },
@@ -63,8 +88,24 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
   ]
 ```
 
-<div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
-  <div class="card" id="plot-1901">${
+<div class="grid grid-cols-2 grid-rows-2 gap-4" style="grid-auto-rows: 504px;">
+  <div class="card" id="plot-1885">${
+    resize((width) =>
+      Plot.plot({
+        title: "Top 10 des métiers en 1885",
+        width,
+        height: 480,
+        marginLeft: 100,
+        x: { label: "Nombre", labelOffset: 30  },
+        y: { label: "Métier", domain: data1885.map(d => d.job), padding: 0.1 },
+        marks: [Plot.barX(data1885, { x: "count", y: "job", tip: true })],
+        style: {
+          fontSize: "12px"
+        }
+})
+    )
+  }</div>
+<div class="card" id="plot-1901">${
     resize((width) =>
       Plot.plot({
         title: "Top 10 des métiers en 1901",
@@ -74,6 +115,23 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
         x: { label: "Nombre", labelOffset: 30  },
         y: { label: "Métier", domain: data1901.map(d => d.job), padding: 0.1 },
         marks: [Plot.barX(data1901, { x: "count", y: "job", tip: true })],
+        style: {
+          fontSize: "12px"
+        }
+})
+    )
+  }</div>
+
+  <div class="card" id="plot-1923">${
+    resize((width) =>
+      Plot.plot({
+        title: "Top 10 des métiers en 1923",
+        width,
+        height: 480,
+        marginLeft: 100,
+        x: { label: "Nombre", labelOffset: 30  },
+        y: { label: "Métier", domain: data1923.map(d => d.job), padding: 0.1 },
+        marks: [Plot.barX(data1923, { x: "count", y: "job", tip: true })],
         style: {
           fontSize: "12px"
         }
