@@ -35,9 +35,7 @@ Ce projet vise à retracer cette dynamique en proposant des graphiques et une ca
 
 # Quelle est la répartition des métiers et des salaires des habitants et habitantes de Lausanne au XXe siècle?
 
----
 
-# Visualisations des données
 
 ```js
   const data1901 = [
@@ -138,19 +136,7 @@ const avg = FileAttachment("data/plot_data/sector_avg.json").json()
   )
 }</div>
 
-### Par métier
 
-```js 
-import Plotly from "npm:plotly.js-dist";
-```
-
-```js
-const fig = await FileAttachment("data/plot_data/salary_per_job.json").json()
-
-const div = display(document.createElement("div"));
-
-Plotly.newPlot(div, fig.data, fig.layout);
-```
 
 
 
@@ -194,8 +180,17 @@ const zoomLevel = 14;
 let yearData = {
   1885: await FileAttachment('./data/intensity_data_1885.json').json(),
   1901: await FileAttachment('./data/intensity_data_1901.json').json(),
+  1923: await FileAttachment('./data/intensity_data_1901.json').json(),
   1951: await FileAttachment('./data/intensity_data_1951.json').json()
-};              // Loaded intensity data for each year
+};
+
+let yearMapData = {
+  1885: await FileAttachment('./data/map_data/map_data_1885.json').json(),
+  1901: await FileAttachment('./data/map_data/map_data_1901.json').json(),
+  1923: await FileAttachment('./data/map_data/map_data_1923.json').json(),
+  1951: await FileAttachment('./data/map_data/map_data_1951.json').json()
+}
+
 let classes = {};              // Currently visible classes
 let markers = {};              // Currently drawn markers
 
@@ -210,9 +205,9 @@ function classIdFromIntensity(intensity) {
 
 function processClasses(data) {
     const grouped = { 0: [], 1: [], 2: [], 3: [] };
-    data.forEach(([intensity, [lat, lng]]) => {
+    data.forEach(([intensity, [lat, lng], job, cat, sector]) => {
         const id = classIdFromIntensity(intensity);
-        grouped[id].push([lat, lng]);
+        grouped[id].push([intensity, [lat, lng], job, cat, sector]);
     });
     return grouped;
 }
@@ -227,13 +222,20 @@ function clearMarkers() {
 function addMarkersToMap(map, selectedClass = "all") {
     for (let c in classes) {
         const color = colors2[c];
-        classes[c].forEach(([lat, lng]) => {
+        classes[c].forEach(([intensity, [lat, lng], job, cat, sector]) => {
             const marker = L.circle([lat, lng], {
                 color: color,
                 fillColor: color,
                 fillOpacity: 1,
                 radius: 3
             });
+
+            // Add hover tooltip
+            marker.bindTooltip(
+                `<strong>${job}</strong><br>Catégorie: ${cat}<br>${sector}`,
+                { permanent: false, direction: "top", opacity: 0.9 }
+            );
+
             if (selectedClass === "all" || selectedClass == c) {
                 marker.addTo(map);
             }
@@ -251,7 +253,7 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png", {
 // Initial load
 function loadYear(year, selectedClass = "all") {
     clearMarkers();
-    classes = processClasses(yearData[year]);
+    classes = processClasses(yearMapData[year]);
     addMarkersToMap(map, selectedClass);
 }
 
@@ -283,9 +285,8 @@ function updateMarkers(selectedClass) {
 }
 ```
 
-
 # Analyses
-
+sign
 
 # Sources
 [Wikipedia](https://fr.wikipedia.org/wiki/Lausanne)
@@ -332,7 +333,4 @@ function updateMarkers(selectedClass) {
     font-size: 90px;
   }
 }
-
-
-
 </style>
