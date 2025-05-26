@@ -9,11 +9,7 @@ export default {
   pages: [
     
       {name: "Méthodologie", path: "/methodo"},
-      {name: "A propos", path: "/a_propos"},
-      {name: "Cadastre Rénové", path: "/cadastre-renove"},
-      {name: "Carte", path: "/carte"},
-      {name: "Carte percentiles", path: "/carte_percentile"},
-      {name: "Carte Soph", path: "/carte2"},
+      {name: "A propos", path: "/a_propos"}
     
   ],
 
