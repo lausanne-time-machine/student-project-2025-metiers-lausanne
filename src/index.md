@@ -6,7 +6,7 @@ toc: true
 
 <div class="hero">
   <h1>Cartographie des revenus dans la ville de Lausanne</h1>
-  <h2>Une étude de la cartographie des métiers à Lausanne durant le XXe siècle, par le groupe Neuchâtel Fun Machine</h2>
+  <h2>Une étude de la cartographie des métiers à Lausanne durant le XXe siècle, à partir des annuaires, par le groupe Neuchâtel Fun Machine</h2>
 
 </div>
 
@@ -30,7 +30,7 @@ En lien avec cette évolution des métiers, les modes de rémunération ont éga
 
 *1928, Ouchy. Sous le regard débonnaire d'un gendarme, l'un des premiers engins à tracer la ligne des routes. Fondation Pierre Izard*
 
-Ce projet vise à retracer cette dynamique en proposant des graphiques et une carte interactive illustrant la répartition des métiers à Lausanne au cours du 20e siècle. L’objectif est de mettre en lumière les transformations économiques, sociales et spatiales de la ville à travers ses professions, ses secteurs d’activité et les conditions de vie des travailleurs.
+Ce projet vise à retracer cette dynamique en proposant des graphiques et une carte interactive illustrant la répartition des métiers à Lausanne au cours du 20e siècle. L’objectif est de mettre en lumière les transformations économiques, sociales et spatiales de la ville à travers ses professions, ses secteurs d’activité et les conditions de vie des travailleurs. Les données de la population sont tirées des annuaires lausannois.
 
 
 # Quelle est la répartition des métiers et des salaires des habitants et habitantes de Lausanne au XXe siècle?
