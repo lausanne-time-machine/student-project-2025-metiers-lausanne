@@ -219,10 +219,10 @@ function processClasses(data) {
     const grouped = getEmptyClasses(CATEGORY_NUMBER);
     data.forEach(([intensity, [lat, lng], job, cat, sector]) => {
         const id = classIdFromCategory(cat);
-        console.log(cat);
-        console.log(id);
         if (id != -1) {
             grouped[id].push([intensity, [lat, lng], job, cat, sector]);
+        } else {
+          console.log("Couldn't find category for ", cat)
         }
     });
     return grouped;
@@ -238,8 +238,8 @@ function clearMarkers() {
 function addMarkersToMap(map, selectedClass = "all") {
     let addedToMapCount = 0;
     for (let c in classes) {
-        const color = colors2[c];
         classes[c].forEach(([intensity, [lat, lng], job, cat, sector]) => {
+            const color = jobToColor[cat]
             const marker = L.circle([lat, lng], {
                 color: color,
                 fillColor: color,
