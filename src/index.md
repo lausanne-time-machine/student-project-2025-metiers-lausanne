@@ -215,6 +215,7 @@ Pour découvrir les cartes interactives, rendez-vous sur ces liens:
 - Entre 1885 et 1901, la société reste majoritairement rurale et hiérarchisée (rentier·e, domestique, agriculteur).
 - En 1923, après la Première Guerre mondiale, on observe les premiers effets de l’industrialisation avec l’apparition de métiers techniques comme typographe ou mécanicien.
 - Après la Seconde Guerre mondiale, l’impact de la massification scolaire (hausse des étudiants) et l’émergence de la société de consommation transparaissent dans les données (vendeuse, représentant).
+- On voit que la ville s'étend au fil du temps.
 
 # Limitations
 - Biais de sélection : les données proviennent d’annuaires payants, et non des recensements.
