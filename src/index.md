@@ -215,6 +215,8 @@ Pour découvrir les cartes interactives, rendez-vous sur ces liens:
 - Entre 1885 et 1901, la société reste majoritairement rurale et hiérarchisée (rentier·e, domestique, agriculteur).
 - En 1923, après la Première Guerre mondiale, on observe les premiers effets de l’industrialisation avec l’apparition de métiers techniques comme typographe ou mécanicien.
 - Après la Seconde Guerre mondiale, l’impact de la massification scolaire (hausse des étudiants) et l’émergence de la société de consommation transparaissent dans les données (vendeuse, représentant).
+- Il n'y a pas de quartier "pauvre" et de quartier "riche"
+- Il n'y a pas de quartier spécifique à un métier
 - On voit que la ville s'étend au fil du temps.
 
 # Limitations
@@ -225,7 +227,9 @@ Pour découvrir les cartes interactives, rendez-vous sur ces liens:
 - Hmogénéité salariale par filiale : toutes les personnes d’une même filiale sont regroupées dans une seule catégorie, avec un salaire unique.
   - Exemple : dans “Hôtellerie, restaurants”, le gérant et le portier reçoivent le même salaire.
 - Surreprésentation de veuves : la présence de nombreuses veuves dans les données fausse potentiellement l’interprétation.
-- nominatim?
+- nominatim
+  - Limitations de temps : environ 5 minutes pour 300 adresses
+  - Sensible au typex 
   
 # Sources
 [Wikipedia](https://fr.wikipedia.org/wiki/Lausanne)
