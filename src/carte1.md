@@ -17,7 +17,7 @@ toc: true
         <option value="3">75–100%</option>
     </select>
 </div>
-
+<p id="displayedMarkers"></p>
 <!-- Map container -->
 <div id="map-container" style="height: 500px; margin: 1em 0 2em 0;"></div>
 <div class="year-selector">
@@ -192,6 +192,7 @@ function clearMarkers() {
 }
 
 function addMarkersToMap(map, selectedClass = "all") {
+    let addedToMapCount = 0;
     for (let c in classes) {
         const color = colors2[c];
         classes[c].forEach(([intensity, [lat, lng], job, cat, sector]) => {
@@ -210,8 +211,10 @@ function addMarkersToMap(map, selectedClass = "all") {
 
             if (selectedClass === "all" || selectedClass == c) {
                 marker.addTo(map);
+                addedToMapCount += 1;
             }
             markers[c].push(marker);
+            updateDisplayedMarkerCount(addedToMapCount);
         });
     }
 }
@@ -281,14 +284,21 @@ function updateNavigationButtons() {
 }
 
 function updateMarkers(selectedClass) {
+    let addedToMapCount = 0;
     for (let c in markers) {
         markers[c].forEach(marker => {
             if (selectedClass === 'all' || selectedClass == c) {
                 marker.addTo(map);
+                addedToMapCount += 1;
             } else {
                 marker.remove();
             }
         });
     }
+    updateDisplayedMarkerCount(addedToMapCount);
+}
+
+function updateDisplayedMarkerCount(newCount) {
+  document.getElementById("displayedMarkers").innerHTML = `${newCount} points affichés`;
 }
 ```

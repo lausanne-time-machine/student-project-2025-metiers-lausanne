@@ -42,7 +42,7 @@ toc: true
     <option value="28">Journalières dans la salaire y compris l'entretien</option>
   </select>
 </div>
-
+<p id="displayedMarkers"></p>
 
 ```js
 const jobToColor = await FileAttachment('./data/map_data/cat_to_color.json').json()
@@ -236,10 +236,10 @@ function clearMarkers() {
 }
 
 function addMarkersToMap(map, selectedClass = "all") {
+    let addedToMapCount = 0;
     for (let c in classes) {
-        
+        const color = colors2[c];
         classes[c].forEach(([intensity, [lat, lng], job, cat, sector]) => {
-            const color = jobToColor[cat]
             const marker = L.circle([lat, lng], {
                 color: color,
                 fillColor: color,
@@ -255,8 +255,10 @@ function addMarkersToMap(map, selectedClass = "all") {
 
             if (selectedClass === "all" || selectedClass == c) {
                 marker.addTo(map);
+                addedToMapCount += 1;
             }
             markers[c].push(marker);
+            updateDisplayedMarkerCount(addedToMapCount);
         });
     }
 }
@@ -326,14 +328,21 @@ function updateNavigationButtons() {
 }
 
 function updateMarkers(selectedClass) {
+    let addedToMapCount = 0;
     for (let c in markers) {
         markers[c].forEach(marker => {
             if (selectedClass === 'all' || selectedClass == c) {
                 marker.addTo(map);
+                addedToMapCount += 1;
             } else {
                 marker.remove();
             }
         });
     }
+    updateDisplayedMarkerCount(addedToMapCount);
+}
+
+function updateDisplayedMarkerCount(newCount) {
+  document.getElementById("displayedMarkers").innerHTML = `${newCount} points affichés`;
 }
 ```
