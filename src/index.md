@@ -266,4 +266,3 @@ Pour découvrir les cartes interactives, rendez-vous sur ces liens:
   }
 }
 </style>
-npm 
