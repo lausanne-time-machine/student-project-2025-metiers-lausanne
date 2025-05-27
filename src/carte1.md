@@ -4,7 +4,7 @@ theme: coffee
 toc: true
 ---
 # Carte des classes de revenus au fil du temps
-<p>Survolez les points avec votre souris pour afficher les information individuelles.</p>
+<p>Survolez les points avec votre souris pour afficher les informations individuelles.</p>
 
 <!-- Class selector -->
 <div class="class-selector">
