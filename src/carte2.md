@@ -346,3 +346,6 @@ function updateDisplayedMarkerCount(newCount) {
   document.getElementById("displayedMarkers").innerHTML = `${newCount} points affichés`;
 }
 ```
+- Il n'y a pas de quartier spécifique à un métier
+- On voit que la ville s'étend au fil du temps.
+
