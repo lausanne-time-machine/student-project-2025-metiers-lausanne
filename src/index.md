@@ -158,6 +158,9 @@ const data1885 = [
 </div>
 
 ---
+- 1885-1901: Société avec une forte hiérarchie (rentier.e, domestique, agriculteur)
+- 1923: Apparition de métiers plus techniques (typographe, mécanicien)
+- 1951: Influence de la Seconde Guerre, augmentation du nombre d’étudiants, début de la société de consommation (vendeuse,      représentant), diversification des emplois
 ```js
 
 const avg = FileAttachment("data/plot_data/sector_avg.json").json()
@@ -193,7 +196,8 @@ const avg = FileAttachment("data/plot_data/sector_avg.json").json()
     })
   )
 }</div>
-
+  
+- Les salaires du secteur secondaire et tertiaire sont très proches car les données trouvées sur le site du [Dictionnaire historique de la Suisse](https://hls-dhs-dss.ch/fr/articles/002408/2009-04-02/) ne faisaient pas de distinction entre ces deux secteurs.
 
 
 # Cartes
@@ -203,21 +207,6 @@ Pour découvrir les cartes interactives, rendez-vous sur ces liens:
 [Par classe de richesse](/carte1)
 
 [Par domaine](/carte2)
-
-
-
-# Analyses
-- Certains métiers restent stables sur toute la période, comme ménagère, rentier·e ou couturière.
-- De nombreux métiers sont genrés : ménagère, couturière (féminins) versus maçon, chauffeur (masculins).
-- Les pics de domestiques en 1901 et de ménagères en 1921 illustrent le rôle central de ces fonctions dans l’organisation sociale de leur époque.
-  - Leur forte représentation reflète une société structurée autour du travail domestique, souvent féminin, avec une répartition stricte des rôles selon le genre et la classe sociale.
-- En 1951, la répartition des professions devient plus équilibrée, signe d’une diversification des emplois.
-- Entre 1885 et 1901, la société reste majoritairement rurale et hiérarchisée (rentier·e, domestique, agriculteur).
-- En 1923, après la Première Guerre mondiale, on observe les premiers effets de l’industrialisation avec l’apparition de métiers techniques comme typographe ou mécanicien.
-- Après la Seconde Guerre mondiale, l’impact de la massification scolaire (hausse des étudiants) et l’émergence de la société de consommation transparaissent dans les données (vendeuse, représentant).
-- Il n'y a pas de quartier "pauvre" et de quartier "riche"
-- Il n'y a pas de quartier spécifique à un métier
-- On voit que la ville s'étend au fil du temps.
 
 # Limitations
 - Biais de sélection : les données proviennent d’annuaires payants, et non des recensements.
@@ -229,7 +218,7 @@ Pour découvrir les cartes interactives, rendez-vous sur ces liens:
 - Surreprésentation de veuves : la présence de nombreuses veuves dans les données fausse potentiellement l’interprétation.
 - nominatim
   - Limitations de temps : environ 5 minutes pour 300 adresses
-  - Sensible au typex 
+  - Sensible au typo
   
 # Sources
 [Wikipedia](https://fr.wikipedia.org/wiki/Lausanne)
@@ -277,4 +266,3 @@ Pour découvrir les cartes interactives, rendez-vous sur ces liens:
   }
 }
 </style>
-npm 
