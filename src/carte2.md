@@ -45,38 +45,7 @@ toc: true
 
 
 ```js
-const jobToColor = {
-    "Produits alimentaires": "#1f77b4",
-    "Vêtem., lingerie, chauss., literie": "#aec7e8",
-    "Industrie textile": "#ff7f0e",
-    "Industrie du papier": "#ffbb78",
-    "Arts graphiques": "#2ca02c",
-    "Industrie chimique": "#98df8a",
-    "Bois, liège, meubles": "#d62728",
-    "Pierre et terre": "#ff9896",
-    "Industrie d. métaux(2)": "#9467bd",
-    "Horlogerie": "#c5b0d5",
-    "Bijouterie, gravure, frappe": "#8c564b",
-    "Construct., charpenterie": "#c49c94",
-    "Gaz, eau, éléctricité": "#e377c2",
-    "Commerce de gros": "#7f7f7f",
-    "Commerce de détail": "#c7c7c7",
-    "Banques, établissments financ. ": "#bcbd22",
-    "Assurances privées": "#dbdb8d",
-    "Agences, location, consultation": "#17becf",
-    "Affaires immobilières, location ": "#9edae5",
-    "Bureaux de consultation": "#393b79",
-    "Hôtellerie, restaurants": "#637939",
-    "Transports": "#8c6d31",
-    "Administration publique": "#843c39",
-    "Réparations": "#7b4173",
-    "Vachers célibataires": "#2ca25f",
-    "Employés pour tous travaux, célibataire": "#99d8c9",
-    "Employées pour le ménage et la ferme": "#e5f5f9",
-    "Journaliers; dans la salaire y compris l'entretien": "#66c2a4",
-    "Journalières dans la salaire y compris l'entretien": "#238b45"
-};
-
+const jobToColor = await FileAttachment('./data/map_data/cat_to_color.json').json()
 const CATEGORY_NUMBER = Object.keys(jobToColor).length;
 
 ```
@@ -90,24 +59,31 @@ const CATEGORY_NUMBER = Object.keys(jobToColor).length;
     <button id="next-year" class="nav-arrow">›</button>
 </div>
 <div class="legend">
-    <div class="legend-title">Légende - Classes de revenu:</div>
-    <div class="legend-item">
-        <div class="legend-color" style="background-color: #7E7E7E;"></div>
-        <span>0–25% (Classe inférieure)</span>
-    </div>
-    <div class="legend-item">
-        <div class="legend-color" style="background-color: #B36B00;"></div>
-        <span>25–50% (Classe moyenne-inférieure)</span>
-    </div>
-    <div class="legend-item">
-        <div class="legend-color" style="background-color: #006400;"></div>
-        <span>50–75% (Classe moyenne-supérieure)</span>
-    </div>
-    <div class="legend-item">
-        <div class="legend-color" style="background-color: #D4AF37;"></div>
-        <span>75–100% (Classe supérieure)</span>
-    </div>
+  <div class="legend-title">Légende - Secteurs d'activité:</div>
+  <div id="legend-items"></div>
 </div>
+
+```js
+const legendContainer = document.getElementById("legend-items");
+
+for (const job in jobToColor) {
+  const color = jobToColor[job];
+
+  const item = document.createElement("div");
+  item.className = "legend-item";
+
+  const colorBox = document.createElement("div");
+  colorBox.className = "legend-color";
+  colorBox.style.backgroundColor = color;
+
+  const label = document.createElement("span");
+  label.textContent = job;
+
+  item.appendChild(colorBox);
+  item.appendChild(label);
+  legendContainer.appendChild(item);
+}
+```
 
 <style>
 .year-selector {
@@ -183,6 +159,7 @@ const CATEGORY_NUMBER = Object.keys(jobToColor).length;
 
 .legend-item {
     display: flex;
+    width: 50%;
     align-items: center;
     margin-bottom: 8px;
 }
@@ -192,6 +169,10 @@ const CATEGORY_NUMBER = Object.keys(jobToColor).length;
     height: 20px;
     border-radius: 50%;
     margin-right: 10px;
+}
+#legend-items {
+    display: flex;         /* ✅ Enable flex layout */
+    flex-wrap: wrap;       /* ✅ Allow wrapping to form columns */
 }
 </style>
 
@@ -256,8 +237,9 @@ function clearMarkers() {
 
 function addMarkersToMap(map, selectedClass = "all") {
     for (let c in classes) {
-        const color = colors2[c];
+        
         classes[c].forEach(([intensity, [lat, lng], job, cat, sector]) => {
+            const color = jobToColor[cat]
             const marker = L.circle([lat, lng], {
                 color: color,
                 fillColor: color,

@@ -207,8 +207,26 @@ Pour découvrir les cartes interactives, rendez-vous sur ces liens:
 
 
 # Analyses
+- Certains métiers restent stables sur toute la période, comme ménagère, rentier·e ou couturière.
+- De nombreux métiers sont genrés : ménagère, couturière (féminins) versus maçon, chauffeur (masculins).
+- Les pics de domestiques en 1901 et de ménagères en 1921 illustrent le rôle central de ces fonctions dans l’organisation sociale de leur époque.
+  - Leur forte représentation reflète une société structurée autour du travail domestique, souvent féminin, avec une répartition stricte des rôles selon le genre et la classe sociale.
+- En 1951, la répartition des professions devient plus équilibrée, signe d’une diversification des emplois.
+- Entre 1885 et 1901, la société reste majoritairement rurale et hiérarchisée (rentier·e, domestique, agriculteur).
+- En 1923, après la Première Guerre mondiale, on observe les premiers effets de l’industrialisation avec l’apparition de métiers techniques comme typographe ou mécanicien.
+- Après la Seconde Guerre mondiale, l’impact de la massification scolaire (hausse des étudiants) et l’émergence de la société de consommation transparaissent dans les données (vendeuse, représentant).
+- On voit que la ville s'étend au fil du temps.
 
-
+# Limitations
+- Biais de sélection : les données proviennent d’annuaires payants, et non des recensements.
+  - Les recensements n’ont pas été utilisés car les données salariales ne sont disponibles que pour le XXe siècle, et les recensements de cette période sont encore protégés (données personnelles).
+- Nomenclature des métiers : les intitulés sont souvent imprécis ou incohérents.
+- Vocabulaire local : certains termes "locaux" comme TL ne sont pas bien interprété par Llama ne sont pas reconnus.
+- Hmogénéité salariale par filiale : toutes les personnes d’une même filiale sont regroupées dans une seule catégorie, avec un salaire unique.
+  - Exemple : dans “Hôtellerie, restaurants”, le gérant et le portier reçoivent le même salaire.
+- Surreprésentation de veuves : la présence de nombreuses veuves dans les données fausse potentiellement l’interprétation.
+- nominatim?
+  
 # Sources
 [Wikipedia](https://fr.wikipedia.org/wiki/Lausanne)
 [Dictionnaire historique de la Suisse](https://hls-dhs-dss.ch/fr/articles/002408/2009-04-02/)
@@ -255,3 +273,4 @@ Pour découvrir les cartes interactives, rendez-vous sur ces liens:
   }
 }
 </style>
+npm 
